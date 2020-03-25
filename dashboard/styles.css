@@ -61,3 +61,24 @@
   text-align: right;
   padding-left: 10px;
 }
+
+
+.col-sm{
+    background-color: #7479ec;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-right: 20px;
+    height: 160px;
+    border-radius: 5px; 
+     
+}
+
+.col-sm:hover{
+    box-shadow: 1px 8px 20px grey;
+   -webkit-transition:  box-shadow .6s ease-in;  
+
+}
+.head1{
+    margin-left: 500px;
+}
+
