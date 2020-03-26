@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link type="text/css" rel="stylesheet" href="./styles.css">
+    <title>Dash-2</title>
+    <link type="text/css" rel="stylesheet" href="./dash-2.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -47,20 +47,22 @@
         <!-- Bootstrap List Group -->
         <ul class="list-group">
                       
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="./index.html" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Dashboard</span>
                 </div>
             </a>
 
-            <a href="./dash-2.html" class="bg-dark list-group-item list-group-item-action">
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-tasks fa-fw mr-3"></span>
                     <span class="menu-collapsed">Statastics</span>
                 </div>
             </a>
             
+                      
+           
            
             <a href="#top" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
                 <div class="d-flex w-100 justify-content-start align-items-center">
@@ -70,64 +72,15 @@
             </a>
         </ul><!-- List Group END-->
     </div><!-- sidebar-container END -->
+
     <!-- MAIN -->
-    <div class="col p-4">
+    <!-- <div class="col p-4">
         <div class="head">
-            <h2>Overview</h2>
+            <h2>Statastics</h2>
             <hr>
         </div>
-        
+
         <div class="container">
-            <div class="row">
-              <div class="col-sm">
-                <div class="head1">
-                    <h4>Total Cases</h4>
-                    <hr>
-                </div>
-                <div class="head2">
-                    <h1>3</h1>
-                    
-                </div>
-              </div>
-              <div class="col-sm">
-                <div class="head1">
-                    <h4>Deaths</h4>
-                    <hr>
-                </div>
-                <div class="head2">
-                    <h1>3</h1>
-                </div>
-              </div>
-              <div class="col-sm">
-                <div class="head1">
-                    <h4>Recovered</h4>
-                    <hr>
-                </div>
-                <div class="head2">
-                    <h1>3</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="head3">
-            <h2>Geological Analysis</h2>
-            <hr>
-        </div>
-        <!-- <div id="regions_div" style="width: 900px; height: 500px;"></div> -->
-
-        <iframe id="map"
-        title="Inline Frame Example"
-        frameborder="0"
-        width="1000"
-        height="480"
-        src="https://datawrapper.dwcdn.net/gkoqZ/1/">
-        </iframe>
-
-
-        <!-- <div class="container">
             <div class="row">
               <div class="col">
                 <iframe id="inlineFrameExample"  
@@ -135,30 +88,86 @@
                 title="Inline Frame Example"
                 height="350"
                 width="500"
-                src="https://datawrapper.dwcdn.net/gkoqZ/1/">
+                src="https://datawrapper.dwcdn.net/yQgvw/1/">
                 </iframe>
-              </div>
-              <div class="col">
-                <iframe id="inlineFrameExample"
+            </div>
+            <div class="col">
+                <iframe id="inlineFrameExample"  
                 frameborder="0"
                 title="Inline Frame Example"
                 height="350"
                 width="500"
-                src="https://datawrapper.dwcdn.net/Avizc/7/">
+                src="https://datawrapper.dwcdn.net/yQgvw/1/">
                 </iframe>
-              </div>
             </div>
-        </div> -->
+        </div>
+
+       
+
+
+        <iframe class="stat"
+                frameborder="0"
+                scrolling="no"
+                title="Inline Frame Example"
+                height="620"
+                width="1000"
+                src="https://datawrapper.dwcdn.net/gEeJA/1/">
+        </iframe> -->
 
 
 
+
+        <div class="col p-4">
+              
     
+              <div class="head3">
+                <h2>World Analysis</h2>
+                <hr>
+            </div>
+            
+    
+    
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <iframe id="inlineFrameExample"  
+                    frameborder="0"
+                    title="Inline Frame Example"
+                    height="350"
+                    width="500"
+                    src="https://datawrapper.dwcdn.net/yQgvw/1/">
+                    </iframe>
+                  </div>
+                  <div class="col">
+                    <iframe id="inlineFrameExample"
+                    frameborder="0"
+                    title="Inline Frame Example"
+                    height="350"
+                    width="500"
+                    src="https://datawrapper.dwcdn.net/Avizc/7/">
+                    </iframe>
+                  </div>
+                </div>
+            </div>
+
+            <iframe class="stat"
+                frameborder="0"
+                scrolling="no"
+                title="Inline Frame Example"
+                height="620"
+                width="1000"
+                src="https://datawrapper.dwcdn.net/gEeJA/1/">
+        </iframe> -->
+    
+    
+    
+
+       
 
     </div><!-- Main Col END -->
 </div><!-- body-row END -->
 
-
-   
-    <script src="app.js"></script>
+<script src="./dash-2.js"></script>
+    
 </body>
 </html>
