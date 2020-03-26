@@ -66,11 +66,13 @@
 .col-sm{
     background-color: #7479ec;
     margin-left: 30px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-right: 20px;
     height: 160px;
     border-radius: 5px; 
-     
+    text-align: center;
+    color: aliceblue;
+    
 }
 
 .col-sm:hover{
@@ -78,7 +80,25 @@
    -webkit-transition:  box-shadow .6s ease-in;  
 
 }
+
 .head1{
-    margin-left: 500px;
+    margin-top: 15px;
 }
 
+.head2{
+    margin-top: 25px;
+}
+.head{
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.head3{
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+#regions_div{
+    margin:0 auto;
+
+}

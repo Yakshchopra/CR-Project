@@ -1,30 +1,28 @@
-$('#body-row .collapse').collapse('hide'); 
-
-// Collapse/Expand icon
-$('#collapse-icon').addClass('fa-angle-double-left'); 
-
-// Collapse click
-$('[data-toggle=sidebar-colapse]').click(function() {
-    SidebarCollapse();
-});
-
-function SidebarCollapse () {
-    $('.menu-collapsed').toggleClass('d-none');
-    $('.sidebar-submenu').toggleClass('d-none');
-    $('.submenu-icon').toggleClass('d-none');
-    $('#sidebar-container').toggleClass('sidebar-expanded sidebar-collapsed');
-    
-    // Treating d-flex/d-none on separators with title
-    var SeparatorTitle = $('.sidebar-separator-title');
-    if ( SeparatorTitle.hasClass('d-flex') ) {
-        SeparatorTitle.removeClass('d-flex');
-    } else {
-        SeparatorTitle.addClass('d-flex');
+function htmlbodyHeightUpdate(){
+    var height3 = $( window ).height()
+    var height1 = $('.nav').height()+50
+    height2 = $('.main').height()
+    if(height2 > height3){
+        $('html').height(Math.max(height1,height3,height2)+10);
+        $('body').height(Math.max(height1,height3,height2)+10);
+    }
+    else
+    {
+        $('html').height(Math.max(height1,height3,height2));
+        $('body').height(Math.max(height1,height3,height2));
     }
     
-    // Collapse/Expand icon
-    $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
 }
+$(document).ready(function () {
+    htmlbodyHeightUpdate()
+    $( window ).resize(function() {
+        htmlbodyHeightUpdate()
+    });
+    $( window ).scroll(function() {
+        height2 = $('.main').height()
+          htmlbodyHeightUpdate()
+    });
+});
 
 google.charts.load('current', {
     'packages':['geochart'],
