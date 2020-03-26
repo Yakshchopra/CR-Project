@@ -36,7 +36,7 @@ google.charts.load('current', {
 
   function drawRegionsMap() {
     var data = google.visualization.arrayToDataTable([
-      ['Country', 'Popularity'],
+      ['Country', 'Cases'],
       ['Germany', 200],
       ['United States', 300],
       ['Brazil', 400],
@@ -44,6 +44,8 @@ google.charts.load('current', {
       ['France', 600],
       ['RU', 700]
     ]);
+
+    
 
     var options = {
         
@@ -58,5 +60,12 @@ google.charts.load('current', {
 
     chart.draw(data, options);
   }
+
+
+
+
+  
+ 
+    
 
   
